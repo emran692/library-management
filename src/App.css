@@ -1,0 +1,79 @@
+:root {
+  --bg-dark: #0f172a;
+  --bg-light: #ffffff;
+  --card-dark: #1e293b;
+  --card-light: #f1f5f9;
+  --text-dark: #ffffff;
+  --text-light: #0f172a;
+}
+
+html.dark {
+  background: var(--bg-dark);
+  color: var(--text-dark);
+}
+
+html.light {
+  background: var(--bg-light);
+  color: var(--text-light);
+}
+
+.library-container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.theme-btn {
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.form, .controls {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.form input, .controls input, select {
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.add-btn {
+  background: #22c55e;
+  color: white;
+}
+
+.cancel-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.books {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.book {
+  padding: 15px;
+  border-radius: 10px;
+  background: var(--card-dark);
+}
+
+.actions button {
+  margin-left: 10px;
+}
+
+.remove {
+  background: #ef4444;
+  color: white;
+}
